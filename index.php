@@ -1,9 +1,12 @@
 <?php
+system('clear');
 
-include "Car.php";
+include 'Cat.php';
+
+$cat1 = new Cat; $cat1->name = 'Mincis';
+$cat2 = new Cat; $cat2->name = 'Brincis';
 
 
-
-Car::hello();
+Cat::moew();
 
 
