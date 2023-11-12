@@ -1,22 +1,9 @@
 <?php
 
+include_once("Vehicle.php");
 
-class Car {
-    private $brand;
-
-    function __construct($brand){
-        $this->brand = $brand;
-    }
-
-    function __destruct(){
-        echo "Dead :) <br>";
-    }
-
-    static function hello(){
-        echo 'Hello my dear friend :)<br>';
-    }
-
-    function getBrand(){
-        return $this->brand;
+class Car extends Vehicle {
+    static function makeNoise(){
+        echo "Beep beep~! UwU 🚗💨\n";
     }
 }
