@@ -3,11 +3,6 @@
 
 using namespace std;
 
-
-
-
-
-
 class Animal {
     protected:
         int age;
