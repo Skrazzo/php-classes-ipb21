@@ -1,20 +1,11 @@
 <?php
-system('clear');
 
-include 'Car.php';
-include 'Train.php';
+include "Car.php";
+include "Square.php";
 
+$square = new Square(20, 10, '@');
+$new_car = new Car('Red', 'Toyota', 69, 420, 4, 444, CarType::Hybrid);
 
-//$cat1 = new Cat; $cat1->name = 'Mincis';
-//$cat2 = new Cat; $cat2->name = 'Brincis';
+print_r($new_car);
 
-$car = new Car('Toyota', 124512);
-$car->makeNoise();
-echo 'Car milage: '. $car->get_milage() . "\n";
-
-$train = new Train("Kawasaki",12410);
-$train->makeNoise();
-echo 'Train milage: ' . $train->get_milage() . "\n";
-
-
-
+//$square->makeNoise();
